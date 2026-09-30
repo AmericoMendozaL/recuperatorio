@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Directorio de Contactos</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body { font-family: Arial, sans-serif; background: #eef2f5; display: flex; justify-content: center; padding-top: 40px; }
+      .card { background: white; width: 400px; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+      h2 { color: #2c3e50; margin-bottom: 20px; }
+      input { width: 100%; padding: 10px; margin-bottom: 12px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; }
+      button { background: #2a7a78; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; }
+      button:hover { background: #1f5e5c; }
+      #lista { margin-top: 20px; }
+      .contacto { display: flex; justify-content: space-between; background: #f8f9fa; padding: 8px 12px; border-radius: 6px; margin-bottom: 8px; }
+      .vacio { text-align: center; color: #888; margin-top: 30px; font-size: 14px; }
+      .contador { margin-top: 25px; border-top: 1px solid #eee; padding-top: 10px; font-size: 14px; font-weight: bold; color: #555; }
+    </style>
+  </head>
+  <body>
+    <h1>Examen Recuperatorio</h1>
+    <h2>directorio decontactos</h2>
+
+    <input type="text"id="nombre" placeholder="Nombre">
+    <input type="text"id="telefono" placeholder="Telefono">
+    <button onclick="agregar()">Agregar</button>
+
+    <input type ="text" id="buscar" placeholder="Buscar contacto por nombre..." style="margin-top:20px;" onkeyup="filtrar()"
+
+    <div id="lista">
+      <p class="vacio">todavia no agregaste contactos.</p>
+
+    </div>
+    <div class="contador">Contactos:<span id="total">0</span></div>
+  </div>
+
+      <!-- comentariio-->
+    <script src="script.js"></script>
+  </body>
+</html>
